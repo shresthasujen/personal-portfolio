@@ -1,0 +1,278 @@
+/* Javascript animation */
+.animate {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: all 0.8s ease-out;
+}
+a {
+  text-decoration: none !important;
+  color: unset !important;
+}
+
+.red {
+  color: red;
+}
+
+.navbar-logo {
+  height: 40px;
+}
+
+.navbar-expand-lg .navbar-collapse {
+  justify-content: end;
+  word-spacing: 20px;
+}
+
+.navbar-expand-lg .navbar-nav .nav-link {
+  padding-right: 1.1rem !important;
+  padding-left: 1.2rem !important;
+}
+
+.image-about {
+  height: 400px;
+  width: 100%;
+}
+.image-about img {
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
+}
+
+.nav-link {
+  font-weight: 500;
+  padding: 1.7rem;
+  font-family: var(--roboto);
+  word-spacing: 40px;
+}
+.about {
+  padding-top: 125px;
+  padding-bottom: 120px;
+  background-color: aliceblue;
+}
+
+.primary-btn {
+  background-color: #8490ff; /*blue*/
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 20px;
+  margin-top: -10px;
+  cursor: pointer;
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+}
+.primary-btn:hover {
+  box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24),
+    0 17px 50px 0 rgba(0, 0, 0, 0.19);
+}
+h2 {
+  padding-top: 15px;
+}
+
+.my-4 {
+  padding-bottom: 30px;
+  padding-top: 0;
+  margin-right: 50px;
+  text-align: start;
+}
+
+.about-me {
+  background-color: white;
+  padding-top: 100px;
+  padding-bottom: 180px;
+}
+.features {
+  padding-bottom: 100px;
+}
+
+/*==================Personal Details==============*/
+h3,
+.offered {
+  text-align: center;
+}
+.offered {
+  padding-bottom: 50px;
+}
+
+.icon-service i {
+  font-size: 3rem;
+}
+
+.card-service {
+  padding: 1rem;
+  background: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.card-service p {
+  text-align: center;
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+/*=============Latest Posts From My Blog=========*/
+.blog {
+  padding-top: 100px;
+  padding-bottom: 100px;
+  background-color: aliceblue;
+}
+.card-service1 p {
+  text-align: start;
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  color: black;
+}
+.text-secndary {
+  text-decoration: none;
+}
+/*=================the footer===============*/
+.footer {
+  padding-top: 70px;
+  background-color: #04091e;
+  color: white;
+  padding-bottom: 100px;
+}
+.card-service2 p {
+  text-align: start;
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  color: white;
+}
+.footer-1 {
+  width: 380px;
+  height: 39px;
+  display: flex;
+}
+.footer-1 input {
+  flex: 3;
+  border: none;
+  outline: none;
+}
+.footer-1 button {
+  background-color: rgb(96, 135, 221);
+  padding: 5px 20px;
+  padding-bottom: 10px;
+  letter-spacing: 1px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.follow {
+  word-spacing: 15px;
+}
+
+.image-blog {
+  height: 0;
+  overflow: hidden;
+  padding-top: calc(9 / 16 * 100%);
+  background: white;
+  position: relative;
+}
+.image-blog img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Contact us*/
+.map {
+  margin: 70px;
+  text-align: center;
+}
+
+.form-control {
+  display: block;
+  width: 100%;
+  padding: 0.375rem 0.75rem;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #212529;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid #ced4da;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  border-radius: 0 !important;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  padding: 15px !important;
+}
+/* */
+@media (max-width: 800px) {
+  .form .row {
+    flex-direction: column;
+  }
+}
+.contact-1 {
+  margin-left: 15%;
+}
+.contact-1 p {
+  text-align: start;
+  margin-left: 9%;
+}
+/* ===================hovering blog image=========== */
+.intro {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.intro {
+  background: rgba(0, 0, 0, 0.2);
+  color: white;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.intro h1,
+p {
+  text-align: center;
+  margin-top: 14%;
+}
+.intro h1 {
+  font-size: 48px !important;
+}
+
+.row > * {
+  padding: 20px;
+}
+.image-blog {
+  filter: brightness(80%) grayscale(3%);
+  transition: filter 0.5s ease;
+}
+
+.image-blog:hover {
+  filter: brightness(100%) grayscale(0%);
+}
+.image-blog img {
+  transition: 0.5s;
+}
+.image-blog:hover img {
+  transform: scale(1.1) rotate(-3deg);
+}
+
+.qualify-1 {
+  padding-bottom: 190px;
+}
+.qualify-2 {
+  padding-top: 190px;
+}
