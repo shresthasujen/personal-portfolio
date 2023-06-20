@@ -11,7 +11,7 @@
 }
 
 .my-qualification {
- margin-left: 8%;
+  text-align: center;
   padding-bottom: 50px;
 }
 .content {
@@ -110,10 +110,10 @@ p {
   text-align: center !important;
 }
 /*==================all blog=============== */
-.intro-1{
-  /* padding-top: 55px; */
-  padding-bottom: 40px;
-}
+/* .intro h1 {
+  padding-top: 55px;
+  font-size: 40px !important;
+  /* padding-bottom: 40px; */
 
 
 .blog-1 {
@@ -168,9 +168,4 @@ h2 {
 }
 .col .submit-btn {
   text-align: right !important;
-}
-
-/* =========POrtfolio=======slides========= */
-.slide2{
-  padding-top: 50px
 }

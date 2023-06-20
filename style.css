@@ -6,7 +6,7 @@
 }
 a {
   text-decoration: none !important;
-  color: unset !important;
+  color: unset;
 }
 
 .red {
@@ -28,11 +28,9 @@ a {
 }
 
 .image-about {
-  height: 400px;
   width: 100%;
 }
 .image-about img {
-  height: 100%;
   width: 100%;
   object-fit: contain;
 }
@@ -47,6 +45,13 @@ a {
   padding-top: 125px;
   padding-bottom: 120px;
   background-color: aliceblue;
+}
+@media only screen and (max-width: 570px) {
+  .about {
+    padding-top: 9px !important;
+    padding-bottom: 20px;
+    background-color: aliceblue;
+  }
 }
 
 .primary-btn {
@@ -72,6 +77,36 @@ a {
 h2 {
   padding-top: 15px;
 }
+.my-intro h2 {
+  margin-bottom: 0 !important;
+}
+@media only screen and (max-width: 570px) {
+  .my-intro h2 {
+    padding-bottom: 1rem !important;
+    padding-top: 5px;
+  }
+}
+.hey-1 {
+  margin-bottom: 0;
+  padding-bottom: 0;
+  text-align: start;
+}
+.hey-2 {
+  padding-bottom: 2rem !important;
+  text-align: left;
+  margin-right: 10%;
+}
+@media only screen and (max-width: 570px) {
+  .hey-1 {
+    padding-bottom: 3px !important;
+    text-align: center !important;
+  }
+}
+@media only screen and (max-width: 570px) {
+  .hey-2 {
+    padding-bottom: 4rem !important;
+  }
+}
 
 .my-4 {
   padding-bottom: 30px;
@@ -83,19 +118,86 @@ h2 {
 .about-me {
   background-color: white;
   padding-top: 100px;
-  padding-bottom: 180px;
+  padding-bottom: 100px;
 }
+@media only screen and (max-width: 570px) {
+  .about-me {
+    background-color: white;
+    padding-top: 20px;
+    padding-bottom: 4rem;
+  }
+}
+
 .features {
   padding-bottom: 100px;
 }
+@media only screen and (max-width: 570px) {
+  .features {
+    padding-bottom: 0px;
+    padding-top: 4rem !important;
+  }
+}
+.features p {
+  font-size: 16px;
+  text-align: center;
+}
+@media only screen and (max-width: 570px) {
+  .features p {
+    font-size: 12px;
+    text-align: center;
+  }
+}
+.sneaker p {
+  text-align: start;
+  padding-bottom: 2rem;
+}
+@media only screen and (max-width: 570px) {
+  .sneaker {
+    text-align: center !important;
+  }
+}
+@media only screen and (max-width: 570px) {
+  .sneaker p {
+    font-size: 14px;
+    text-align: center !important;
+  }
+}
 
+.my-intro {
+  padding-left: 3rem !important;
+}
+
+@media only screen and (max-width: 570px) {
+  .my-intro {
+    text-align: center;
+    padding-left: 12px !important;
+    padding: 2rem !important;
+  }
+}
+@media only screen and (max-width: 570px) {
+  .my-intro p {
+    margin: 0;
+    font-size: 12px;
+    text-align: justify;
+  }
+}
 /*==================Personal Details==============*/
+
 h3,
 .offered {
   text-align: center;
 }
 .offered {
   padding-bottom: 50px;
+  padding-left: 30%;
+  padding-right: 30%;
+}
+@media only screen and (max-width: 570px) {
+  .offered {
+    padding-bottom: 10px;
+    padding-left: 0;
+    padding-right: 0;
+  }
 }
 
 .icon-service i {
@@ -121,9 +223,21 @@ h3,
 
 /*=============Latest Posts From My Blog=========*/
 .blog {
-  padding-top: 100px;
+  padding-top: 90px;
   padding-bottom: 100px;
   background-color: aliceblue;
+}
+.blog a {
+  color: #04091e;
+}
+.blog a:hover {
+  color: #232427;
+}
+.blog h4 {
+  text-align: center;
+}
+.blog p {
+  font-size: 13px;
 }
 .card-service1 p {
   text-align: start;
@@ -143,6 +257,12 @@ h3,
   color: white;
   padding-bottom: 100px;
 }
+@media only screen and (max-width: 570px) {
+  .footer {
+    padding-top: 0;
+    padding-bottom: 10px;
+  }
+}
 .card-service2 p {
   text-align: start;
   display: -webkit-box;
@@ -151,8 +271,13 @@ h3,
   overflow: hidden;
   color: white;
 }
+@media only screen and (max-width: 570px) {
+  .card-service2 p {
+    font-size: 13px;
+  }
+}
 .footer-1 {
-  width: 380px;
+  width: 100%;
   height: 39px;
   display: flex;
 }
@@ -178,7 +303,7 @@ h3,
 .image-blog {
   height: 0;
   overflow: hidden;
-  padding-top: calc(9 / 16 * 100%);
+  padding-top: calc(3 / 5 * 100%);
   background: white;
   position: relative;
 }
@@ -193,10 +318,18 @@ h3,
 
 /* Contact us*/
 .map {
-  margin: 70px;
+  margin: 10px;
+  margin-top: 4rem;
+  margin-bottom: 4rem;
   text-align: center;
+  overflow: hidden;
 }
-
+@media (max-width: 800px) {
+  .map {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
+}
 .form-control {
   display: block;
   width: 100%;
@@ -228,6 +361,16 @@ h3,
   text-align: start;
   margin-left: 9%;
 }
+@media only screen and (max-width: 570px) {
+  .contact-1 {
+    margin-left: 5% !important;
+  }
+}
+@media only screen and (max-width: 570px) {
+  .contact-1 h4 {
+    font-size: 17px;
+  }
+}
 /* ===================hovering blog image=========== */
 .intro {
   position: absolute;
@@ -250,6 +393,11 @@ p {
 }
 .intro h1 {
   font-size: 48px !important;
+}
+@media only screen and (max-width: 570px) {
+  .intro h1 {
+    font-size: 30px !important;
+  }
 }
 
 .row > * {
@@ -275,4 +423,368 @@ p {
 }
 .qualify-2 {
   padding-top: 190px;
+}
+.about-1 {
+  background-color: #8490ff;
+  padding-top: 80px;
+  padding-bottom: 80px;
+  text-align: center;
+  color: white;
+}
+.about-1 a {
+  text-decoration: none;
+  color: white;
+}
+
+.my-qualification {
+  padding-bottom: 50px;
+}
+@media only screen and (max-width: 570px) {
+  .my-qualification h1 {
+    font-size: 20px !important;
+  }
+}
+
+.content {
+  text-align: center;
+  box-shadow: 0 8px 10px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  width: 30%;
+  padding-top: 0px;
+  padding-bottom: 10px;
+}
+.quali {
+  padding-top: 50px;
+  text-align: center;
+  position: center;
+}
+.features {
+  padding-top: 90px;
+}
+
+/*========================Services========================*/
+/*freshboxnepal*/
+.my-business {
+  background-color: aliceblue;
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+.freshb a {
+  color: #04091e;
+}
+.freshb a:hover {
+  color: #232427;
+}
+@media only screen and (max-width: 570px) {
+  .my-business {
+    padding-top: 0px;
+    padding-bottom: 10px;
+  }
+}
+.freshb {
+  background-color: white;
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+@media only screen and (max-width: 570px) {
+  .freshb {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+}
+/* =====================================blog.html================ */
+/* first row */
+.about-2 img {
+  filter: grayscale(60%);
+  opacity: 0.9;
+  filter: brightness(60%);
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+}
+@media only screen and (max-width: 570px) {
+  .about-2 img {
+    height: 400px !important;
+    max-width: 800px;
+    overflow: hidden !important;
+    object-fit: contains;
+    max-inline-size: 100%;
+    block-size: auto;
+    aspect-ratio: 2/1;
+    object-fit: cover;
+    object-position: top center;
+    filter: brightness(70%);
+  }
+}
+@media only screen and (max-width: 570px) {
+  .about-2 h1 {
+    font-size: 35px !important;
+  }
+}
+@media only screen and (max-width: 570px) {
+  .about-2 p {
+    font-size: 10px !important;
+  }
+}
+.port-head {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+}
+.port-head p {
+  padding: 0 12rem 0 12rem;
+}
+@media only screen and (max-width: 570px) {
+  .port-head p {
+    padding: 0;
+  }
+}
+@media only screen and (max-width: 570px) {
+  .port-head {
+    top: 50%;
+    left: 40%;
+    transform: translate(-32%, -50%);
+    color: white;
+  }
+}
+.left-content {
+  padding-top: 2.8rem;
+}
+.bottom-content {
+  padding-top: 19rem;
+}
+.bottom-content-1 {
+  padding-top: 19rem;
+}
+
+@media only screen and (max-width: 570px) {
+  .bottom-content {
+    padding-top: 11rem;
+  }
+}
+.feedback {
+  position: relative !important;
+  padding: 0 !important;
+  margin: 0 !important;
+}
+.left-content {
+  position: sticky !important;
+  top: 0 !important;
+  left: 0 !important ;
+  z-index: 999 !important;
+}
+.profile-port {
+  position: relative;
+}
+.sticker {
+  position: sticky !important;
+  top: 0 !important;
+  left: 0 !important ;
+  z-index: 999 !important;
+}
+
+.feedback p {
+  margin-bottom: 2.8rem;
+}
+@media only screen and (max-width: 570px) {
+  .feedback p {
+    font-size: 10px;
+    margin: 1rem;
+  }
+}
+
+@media only screen and (max-width: 570px) {
+  .middle-port {
+    width: 70% !important;
+  }
+}
+h1,
+p {
+  text-align: center;
+}
+
+h1 {
+  font-size: 54px !important;
+  font-weight: 700 !important;
+}
+.life {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  display: flex;
+  text-align: center;
+  /* margin-left: 10  ; */
+}
+@media only screen and (max-width: 570px) {
+  .life {
+    padding-bottom: 10px;
+  }
+}
+.life-2 {
+  display: flex;
+  word-spacing: 2px !important;
+  margin-left: 0 !important;
+}
+
+.card-1 {
+  height: 220px;
+  width: 350px;
+  margin: 20px;
+  margin-right: 0 !;
+  overflow: hidden;
+}
+
+.card-1 img {
+  height: 230px;
+  overflow: hidden;
+  transition: 0.5s;
+}
+
+p {
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+h1,
+p {
+  text-align: center;
+}
+
+@media (max-width: 820px) {
+  .life .life-2 {
+    flex-direction: column;
+  }
+}
+
+.card-body {
+  text-align: center !important;
+  padding-top: 1.5rem !important;
+}
+@media only screen and (max-width: 500px) {
+  .card-body h5 {
+    font-size: 17px;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .card-body p {
+    font-size: 11px;
+  }
+}
+
+.card-text {
+  text-align: start !important;
+}
+/*==================all blog=============== */
+.intro-1 {
+  /* padding-top: 55px; */
+  padding-bottom: 40px;
+}
+
+.blog-1 {
+  text-align: left;
+  padding-bottom: 10px;
+}
+.vertical-line {
+  width: 200px;
+  height: 2px;
+  background-color: silver;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  position: relative;
+}
+@media only screen and (max-width: 570px) {
+  .vertical-line {
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    position: relative;
+  }
+}
+.card-1:hover {
+  cursor: pointer;
+}
+
+.card-1:hover img {
+  transform: scale(1.1) rotate(-4deg);
+}
+
+/* ================right content============ */
+.list-group {
+  padding-top: 50px;
+  text-align: center;
+}
+.mb-1 {
+  text-align: start !important;
+}
+.d-grid gap-2,
+h2 {
+  padding-bottom: 20px !important;
+}
+.submit-btn {
+  background-color: #8490ff; /*blue*/
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: right;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 20px;
+  margin-top: -10px;
+  cursor: pointer;
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+}
+.submit-btn:hover {
+  box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24),
+    0 17px 50px 0 rgba(0, 0, 0, 0.19);
+}
+.col .submit-btn {
+  text-align: right !important;
+}
+
+/* =========POrtfolio=======slides========= */
+.slide2 {
+  padding-top: 120px;
+}
+
+@media only screen and (max-width: 570px) {
+  .slide2 p {
+    font-size: 12px;
+  }
+}
+@media only screen and (max-width: 570px) {
+  .qualify-1 {
+    padding-bottom: 10px;
+    padding-top: 20px;
+  }
+}
+@media only screen and (max-width: 570px) {
+  .qualify-2 {
+    padding-bottom: 0px;
+    padding-top: 10px;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .col-xs-2 {
+    width: 40% !important;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .col-xs-7 {
+    width: 60% !important;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .all-qualify {
+    display: block !important;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .col-xs {
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
+  }
 }
